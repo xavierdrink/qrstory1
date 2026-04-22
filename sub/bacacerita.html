@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Baca Cerita Interaktif - Full Naskah</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',Arial,sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:
+    linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.35)),
+    url('../assets/Background.jpeg') center/cover fixed;
+    min-height:100vh;
+    padding:20px;
+}
+
+.container{
+    max-width:1150px;
+    margin:auto;
+    background:rgba(255,255,255,.96);
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+}
+
+/* HEADER */
+.hero{
+    text-align:center;
+    padding:45px 25px;
+    color:white;
+    background:linear-gradient(135deg,#ff9966,#ff5e62);
+}
+
+.hero h1{
+    font-size:40px;
+    margin-bottom:8px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.nav{
+    margin-top:18px;
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.nav a{
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,.18);
+    padding:10px 18px;
+    border-radius:40px;
+}
+
+.nav a:hover{
+    background:rgba(255,255,255,.28);
+}
+
+.content{
+    padding:30px;
+}
+
+.title{
+    font-size:28px;
+    color:#2c3e50;
+    border-left:6px solid #ff6b6b;
+    padding-left:14px;
+    margin-bottom:22px;
+}
+
+/* TOKOH */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:24px;
+    margin-bottom:45px;
+}
+
+.card{
+    background:white;
+    border-radius:24px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:auto;
+    display:block;
+    object-fit:contain;
+    background:#f8f8f8;
+}
+
+.card-body{
+    padding:22px;
+}
+
+.card h3{
+    font-size:30px;
+    color:#e74c3c;
+    margin-bottom:12px;
+}
+
+.card ul{
+    padding-left:20px;
+    margin:10px 0;
+}
+
+.card li{
+    line-height:1.7;
+    color:#444;
+}
+
+/* STORY */
+.story{
+    display:grid;
+    gap:18px;
+}
+
+.scene{
+    background:white;
+    border-radius:20px;
+    padding:24px;
+    box-shadow:0 8px 20px rgba(0,0,0,.06);
+    border-left:7px solid #4ecdc4;
+    transition:.3s;
+}
+
+.scene:hover{
+    transform:translateX(6px);
+}
+
+.scene h4{
+    font-size:24px;
+    color:#2c3e50;
+    margin-bottom:12px;
+}
+
+.scene p{
+    line-height:1.9;
+    color:#444;
+    margin-bottom:10px;
+}
+
+/* MORAL */
+.moral{
+    margin-top:30px;
+    background:linear-gradient(135deg,#fff5b7,#ffe082);
+    padding:25px;
+    border-radius:20px;
+}
+
+.moral h3{
+    color:#7d6608;
+    margin-bottom:10px;
+}
+
+.moral p{
+    color:#5d4b00;
+    line-height:1.8;
+}
+
+/* FOOTER */
+.footer{
+    text-align:center;
+    padding:35px 20px;
+}
+
+.btn{
+    text-decoration:none;
+    display:inline-block;
+    background:linear-gradient(135deg,#ff6b6b,#e74c3c);
+    color:white;
+    padding:14px 28px;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+@media(max-width:768px){
+
+body{padding:10px;}
+
+.hero h1{font-size:30px;}
+
+.content{padding:18px;}
+
+.title{font-size:24px;}
+
+.scene h4{font-size:21px;}
+
+.btn{width:100%;text-align:center;}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<div class="hero">
+<h1>📖 QR STORY 1</h1>
+<p>Judul: “Ayo Jaga Kebersihan”</p>
+
+<div class="nav">
+<a href="#tokoh">👦 Tokoh</a>
+<a href="#naskah">📚 Naskah</a>
+<a href="#moral">💡 Moral</a>
+</div>
+</div>
+
+<div class="content">
+
+<h2 class="title" id="tokoh">👦👧 Karakter Tokoh</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="../assets/arga.jpg" alt="Arga">
+<div class="card-body">
+<h3>Arga</h3>
+<ul>
+<li>Anak yang ceria, aktif, dan penuh semangat</li>
+<li>Kadang terburu-buru</li>
+<li>Suka membantu</li>
+<li>Peduli kebersihan lingkungan</li>
+</ul>
+</div>
+</div>
+
+<div class="card">
+<img src="../assets/dita.jpeg" alt="Dita">
+<div class="card-body">
+<h3>Dita</h3>
+<ul>
+<li>Anak yang tenang dan teliti</li>
+<li>Peduli kebersihan</li>
+<li>Selalu berpikir sebelum bertindak</li>
+<li>Sopan dan suka mengingatkan teman</li>
+</ul>
+</div>
+</div>
+
+</div>
+
+<h2 class="title" id="naskah">📚 Naskah Cerita Lengkap</h2>
+
+<div class="story">
+
+<div class="scene">
+<h4>🌧 BAGIAN 1 – Pagi Hari Hujan</h4>
+<p><b>Narator:</b> Pagi hari itu, hujan turun dengan rintik-rintik. Arga dan Dita tetap berangkat ke sekolah.</p>
+<p><b>Arga (sedikit mengeluh):</b> “Hujannya belum berhenti ya, Dita.”</p>
+<p><b>Dita (tenang):</b> “Iya, tapi kita tetap harus semangat ke sekolah.”</p>
+</div>
+
+<div class="scene">
+<h4>🏫 BAGIAN 2 – Tiba di Sekolah</h4>
+<p><b>Narator:</b> Sesampainya di sekolah, bel tanda masuk berbunyi. Arga dan Dita segera masuk ke kelas.</p>
+</div>
+
+<div class="scene">
+<h4>🧹 BAGIAN 3 – Melihat Kelas Kotor</h4>
+<p><b>Narator:</b> Saat masuk ke kelas, mereka melihat lantai yang basah dan kotor karena bekas air hujan dari sepatu teman-teman.</p>
+<p><b>Dita (kaget):</b> “Arga, lihat lantainya. Banyak jejak air dan kotoran.”</p>
+<p><b>Arga:</b> “Iya… jadi licin dan kotor.”</p>
+</div>
+
+<div class="scene">
+<h4>✨ BAGIAN 4 – Mulai Membersihkan</h4>
+<p><b>Narator:</b> Arga dan Dita berinisiatif membersihkan kelas.</p>
+<p><b>Arga (semangat):</b> “Aku akan mengelap lantai supaya tidak licin!”</p>
+<p><i>(gerakan mengelap)</i></p>
+<p><b>Dita:</b> “Aku akan merapikan dan membersihkan bagian yang kotor.”</p>
+<p><b>Narator:</b> Mereka bekerja dengan hati-hati dan penuh semangat.</p>
+<p><b>Arga (lebih serius):</b> “Kalau tidak dibersihkan, nanti bisa membuat teman jatuh.”</p>
+<p><b>Dita:</b> “Iya, kebersihan itu penting untuk kenyamanan dan keselamatan.”</p>
+</div>
+
+<div class="scene">
+<h4>🌟 BAGIAN 5 – Kelas Menjadi Bersih</h4>
+<p><b>Narator:</b> Tidak lama kemudian, kelas menjadi bersih dan tidak licin lagi.</p>
+<p><b>Dita (senang):</b> “Sekarang kelas kita sudah bersih.”</p>
+<p><b>Arga:</b> “Iya, jadi aman dan nyaman untuk belajar.”</p>
+</div>
+
+<div class="scene">
+<h4>🎵 BAGIAN 6 – Penutup</h4>
+<p><b>Narator:</b> Meskipun hari itu hujan, Arga dan Dita tetap peduli menjaga kebersihan kelas mereka.</p>
+</div>
+
+</div>
+
+<div class="moral" id="moral">
+<h3>💡 Pesan Moral</h3>
+<p>Kita harus tetap menjaga kebersihan lingkungan meskipun dalam keadaan apa pun agar belajar tetap nyaman dan aman.</p>
+</div>
+
+<div class="footer">
+<a href="../index.html" class="btn">⬅ Kembali ke Menu</a>
+</div>
+
+</div>
+</div>
+
+</body>
+</html>
